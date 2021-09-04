@@ -1,0 +1,12 @@
+.primary-btn {
+    background-color: transparent;
+    padding: 15px 40px;
+    border: 2px solid black;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+}

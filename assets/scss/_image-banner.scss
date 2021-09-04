@@ -1,0 +1,100 @@
+
+.swiper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+
+    #slider-three {
+            
+        width: 100%;
+        height: 100%;
+        background-color:#f4f5f7 !important ;
+    }
+
+    .swiper-slide {
+        height: 100%;
+        width: 100%;
+        #slide-img-two {
+            margin-top: 170px !important;
+        }
+
+        #slide-img-three {
+            margin-top: 270px !important;
+            
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .caption {
+            margin-top:-30px ;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            z-index: 20;
+
+                h2 {
+                    font-family: 'Prata',sans-serif;
+                    text-transform: uppercase;
+                    font-size: 70px;
+                    font-weight: 400;
+                    line-height: 80px;
+                    letter-spacing: 13px;
+                }
+
+                p {
+                  font-family: 'Open Sans', sans-serif;
+                  min-width: 539px;
+                  max-width: 539px;
+                  white-space: normal;
+                  font-size: 19px;
+                  line-height: 35px;
+                  font-weight: 300;
+                //   color: rgb(144, 144, 144);  
+
+                  margin-top: 30px;
+                }
+
+                .cta-button {
+                    margin-top: 40px;
+
+                    button {
+                    font-family: 'Open Sans', sans-serif;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 0.2em;
+                  }
+                }
+
+        }
+    }
+}
+
+.swiper-button-prev {
+    color: black;
+    left: 50px;
+}
+.swiper-button-next {
+    color: black;
+    right: 50px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000;
+  }
+

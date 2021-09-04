@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.lighten {
+  opacity: 0.8;
+}
+
+.flip {
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.nav-container {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+
+.nav-container .nav-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 55px;
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+}
+
+.nav-container .nav-menu .nav-logo {
+  position: absolute;
+  left: 5%;
+}
+
+.nav-container .nav-menu .nav-logo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.nav-container .nav-menu .nav-logo a .viewbox {
+  width: 200px;
+}
+
+.nav-container .nav-menu .nav-logo a .viewbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-container .nav-menu .nav-menu__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-center;
+  align-items: center;
+  position: absolute;
+}
+
+.nav-container .nav-menu .nav-menu__list li {
+  margin: 0 50px;
+}
+
+.nav-container .nav-menu .nav-menu__list li a {
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.nav-container .nav-menu .nav-menu__list li a:hover {
+  color: #d6b981;
+  transition: all 0.5s;
+}
+
+.swiper {
+  height: 100vh;
+  width: 100vw;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper #slider-three {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f5f7 !important;
+}
+
+.swiper-wrapper .swiper-slide {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-wrapper .swiper-slide #slide-img-two {
+  margin-top: 170px !important;
+}
+
+.swiper-wrapper .swiper-slide #slide-img-three {
+  margin-top: 270px !important;
+}
+
+.swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-wrapper .swiper-slide .caption {
+  margin-top: -30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.swiper-wrapper .swiper-slide .caption h2 {
+  font-family: 'Prata',sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 13px;
+}
+
+.swiper-wrapper .swiper-slide .caption p {
+  font-family: 'Open Sans', sans-serif;
+  min-width: 539px;
+  max-width: 539px;
+  white-space: normal;
+  font-size: 19px;
+  line-height: 35px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.swiper-wrapper .swiper-slide .caption .cta-button {
+  margin-top: 40px;
+}
+
+.swiper-wrapper .swiper-slide .caption .cta-button button {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.swiper-button-prev {
+  color: black;
+  left: 50px;
+}
+
+.swiper-button-next {
+  color: black;
+  right: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.primary-btn {
+  background-color: transparent;
+  padding: 15px 40px;
+  border: 2px solid black;
+}
+
+.primary-btn:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/*
+    Auther: Abdelrhman Said
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  position: absolute;
+  right: 50px;
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -40px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+.wrapper .zalo:hover,
+.wrapper .zalo:hover .tooltip,
+.wrapper .zalo:hover .tooltip::before {
+  background-color: #0573ff;
+  color: #ffffff;
+}
+
+#zalo-icon-white {
+  display: none;
+}
+
+.wrapper .zalo:hover #zalo-icon-white {
+  display: block;
+}
+
+.wrapper .zalo:hover #zalo-icon-blk {
+  display: none;
+}
+
+.about-section {
+  height: 434px;
+  width: 100%;
+}
+
+.block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.block h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: 400;
+}
+
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #d6b981;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d6b981;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  color: #000;
+}
+/*# sourceMappingURL=main.css.map */

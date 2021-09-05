@@ -1,10 +1,38 @@
 $primary-text-color: #000;
+$small-text-color: #6a6a6a;
+$secondary-color: #d6b981;
 
-.lighten {
-    opacity: 0.8;
-}
+
+
 
 .flip {
     position: absolute;
     transform: rotate(180deg);
+}
+
+
+@mixin h2-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .1em;
+ 
+}
+
+
+@mixin section-text {
+    font-size: 15px;
+    color: $small-text-color;
+    text-transform: none;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+    letter-spacing: .025em;
+    vertical-align: baseline;
+    text-align: center;
+   
+    &::selection {
+        background: #d6b981;
+        color: #fff;
+    }
 }

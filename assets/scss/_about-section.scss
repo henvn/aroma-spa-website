@@ -1,8 +1,42 @@
 
 .about-section {
-   
+   background-image: url(https://aviana.qodeinteractive.com/wp-content/uploads/2017/09/h1-parallax-1.jpg);
+   background-position: center;
    height: 434px;
    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .about-container {
+     
+      display: grid;
+      place-items: center;
+      
+      
+      .divide-line {
+         padding: 0px 170px;
+         border-top: 1px solid $secondary-color;
+         margin-top: 15px;
+         margin-bottom: 40px;
+      }
 
+      .about-caption {
+         font-family: 'Prata', sans-serif;
+         width: 691px;
+         margin-bottom: 5px;
+         h2 {
+         
+            @include h2-title;
+         }
+
+         h6 {
+            margin-top: 20px;
+            @include section-text;
+           
+         }
+
+      }
+
+   }
     
 }

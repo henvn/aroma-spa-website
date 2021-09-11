@@ -1,0 +1,89 @@
+.section-location {
+    background-image: url(/assets/images/h1-parallax-2a.jpg);
+    height: 702px;
+    width: 100%;
+    .about-container {
+          padding-top:110px;
+          display: grid;
+          place-items: center;
+          padding-bottom: 60px;
+          
+          .divide-line {
+             padding: 0px 170px;
+             border-top: 1px solid $secondary-color;
+             margin-top: 15px;
+             margin-bottom: 40px;
+          }
+    
+          .about-caption {
+             font-family: 'Prata', sans-serif;
+             width: 880px;
+             margin-bottom: 5px;
+             h2 {
+                line-height: 1.6em;
+                @include h2-title;
+             }
+    
+             h6 {
+                margin-top: 20px;
+                line-height: 1.87em;
+                @include section-text;
+               
+             }
+    
+          }
+    
+       }
+
+    .location-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 300px;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        .card {
+            width: 25%;
+            height: inherit;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h4{
+                letter-spacing: .1em;
+                display: block;
+                margin-block-start: 1.33em;
+                margin-block-end: 1.33em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-size: 17px;
+                font-family: 'Prata', sans-serif;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            p {
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-family: "Open Sans",sans-serif;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 1.87em;
+                color: #909090;
+                text-align: center;
+                a{
+                    color: #000;
+                    text-decoration: none;
+                    transition: color .2s ease-out;
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

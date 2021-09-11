@@ -10,6 +10,13 @@ $secondary-color: #d6b981;
     transform: rotate(180deg);
 }
 
+@mixin card-text {
+    color: #909090;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: .025em;
+}
 
 @mixin h2-title {
     font-size: 30px;
@@ -20,6 +27,15 @@ $secondary-color: #d6b981;
  
 }
 
+@mixin h5-title {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: $primary-text-color;
+    letter-spacing: .1em;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
 
 @mixin section-text {
     font-size: 15px;

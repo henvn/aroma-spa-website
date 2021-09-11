@@ -1,0 +1,40 @@
+.section-three {
+   padding-top: 100px;
+   height: 380  px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .about-container {
+    padding-top:10px;
+      display: grid;
+      place-items: center;
+      
+      
+      .divide-line {
+         padding: 0px 170px;
+         border-top: 1px solid $secondary-color;
+         margin-top: 15px;
+         margin-bottom: 40px;
+      }
+
+      .about-caption {
+         font-family: 'Prata', sans-serif;
+         width: 880px;
+         margin-bottom: 5px;
+         h2 {
+            line-height: 1.6em;
+            @include h2-title;
+         }
+
+         h6 {
+            margin-top: 20px;
+            line-height: 1.87em;
+            @include section-text;
+           
+         }
+
+      }
+
+   }
+}
